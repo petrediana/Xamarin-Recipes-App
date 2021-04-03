@@ -6,6 +6,7 @@ namespace AppRetetePDM.Classes.Ingredient
 {
     public interface IBaseIngredient
     {
-
+        string Name { get; set; }
+        string Quantity { get; set; }
     }
 }
