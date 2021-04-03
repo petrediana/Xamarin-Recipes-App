@@ -1,0 +1,1 @@
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\AppRetetePDM.UWP.csproj;x86

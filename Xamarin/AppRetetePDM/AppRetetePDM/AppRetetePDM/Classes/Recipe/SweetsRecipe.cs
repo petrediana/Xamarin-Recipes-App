@@ -23,6 +23,14 @@ namespace AppRetetePDM.Classes.Recipe
             _baseIngredients.Add(baseIngredient);
         }
 
+        public void AddMoreIngredients(IEnumerable<IBaseIngredient> baseIngredients)
+        {
+            foreach (var baseIngredient in baseIngredients)
+            {
+                AddIngredient(baseIngredient);
+            }
+        }
+
         public string Ingredients { get => GetBaseIngredients(_baseIngredients); }
         public string RecipeName { get => _recipeName; set => _recipeName = value; }
         public string RecipeDescriptions { get => _recipeDescription; set => _recipeDescription = value; }
@@ -34,9 +42,10 @@ namespace AppRetetePDM.Classes.Recipe
             foreach (var baseIngredient in baseIngredients)
             {
                 ingredientsBuilder.Append(baseIngredient.ToString());
-                ingredientsBuilder.Append(", ");
+                ingredientsBuilder.Append("\n");
             }
 
+            ingredientsBuilder.Remove(ingredientsBuilder.Length - 2, 1);
             return ingredientsBuilder.ToString();
         }
     }

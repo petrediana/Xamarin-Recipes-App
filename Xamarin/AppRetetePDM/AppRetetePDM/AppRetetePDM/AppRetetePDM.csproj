@@ -16,9 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Classes\Recipe\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
     <Folder Include="Services\" />
   </ItemGroup>
 </Project>

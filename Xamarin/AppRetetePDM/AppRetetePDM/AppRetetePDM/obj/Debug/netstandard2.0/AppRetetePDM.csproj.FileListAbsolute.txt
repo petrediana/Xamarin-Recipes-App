@@ -1,0 +1,14 @@
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.csprojAssemblyReference.cache
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.AssemblyInfoInputs.cache
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.AssemblyInfo.cs
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.csproj.CoreCompileInputs.cache
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\AppRetetePDM.deps.json
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\AppRetetePDM.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\ref\AppRetetePDM.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\AppRetetePDM.pdb
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\ref\AppRetetePDM.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.pdb
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
