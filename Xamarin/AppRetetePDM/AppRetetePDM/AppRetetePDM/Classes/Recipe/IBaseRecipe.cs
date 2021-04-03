@@ -7,7 +7,7 @@ namespace AppRetetePDM.Classes.Recipe
 {
     public interface IBaseRecipe
     {
-        string GetBaseIngredients(IEnumerable<IBaseIngredient> baseIngredients);
+        string GetBaseIngredients();
         void AddIngredient(IBaseIngredient baseIngredient);
         void AddMoreIngredients(IEnumerable<IBaseIngredient> baseIngredients);
         string RecipeName { get; set; }

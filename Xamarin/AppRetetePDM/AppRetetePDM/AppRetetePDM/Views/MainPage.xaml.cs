@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Newtonsoft.Json;
 
 namespace AppRetetePDM
 {
@@ -30,38 +31,86 @@ namespace AppRetetePDM
 
         private void CreateSomeRecipes()
         {
+            List<IBaseRecipe> someList = new List<IBaseRecipe>();
+            someList.Add(Recipe1());
+            someList.Add(Recipe2());
+
+            string serialisedList = JsonConvert
+                .SerializeObject(someList, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+
+            var deserialisedRecipe1 = JsonConvert
+                .DeserializeObject<List<SweetsRecipe>>(serialisedList, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+
+            _baseRecipes.AddRange(deserialisedRecipe1);
+
+        }
+
+        private IBaseRecipe Recipe2()
+        {
+            IBaseRecipe recipe1 = new SweetsRecipe
+            {
+                RecipeName = "Calitate cu dulceata",
+                RecipeDescriptions = "Cand ai chef de clatite..."
+            };
+
+            BaseIngredient ingredient1 = new BaseIngredient
+            {
+                Name = "Dulceata de visine",
+                Quantity = "un borcan"
+            };
+
+            BaseIngredient ingredient2 = new BaseIngredient
+            {
+                Name = "Faina",
+                Quantity = "un pahar"
+            };
+
+            BaseIngredient ingredient3 = new BaseIngredient
+            {
+                Name = "Apa minerala",
+                Quantity = "un sfert de pahar"
+            };
+
+            List<BaseIngredient> baseIngredients1 =
+                new List<BaseIngredient>() { ingredient1, ingredient2, ingredient3 };
+
+            recipe1.AddMoreIngredients(baseIngredients1);
+
+            return recipe1;
+        }
+
+        private IBaseRecipe Recipe1()
+        {
             IBaseRecipe recipe1 = new SweetsRecipe
             {
                 RecipeName = "Placinta cu mere",
                 RecipeDescriptions = "O placinta buna"
             };
 
-            IBaseIngredient ingredient1 = new BaseIngredient
+            BaseIngredient ingredient1 = new BaseIngredient
             {
                 Name = "Mere",
                 Quantity = "20"
             };
 
-            IBaseIngredient ingredient2 = new BaseIngredient
+            BaseIngredient ingredient2 = new BaseIngredient
             {
                 Name = "Faina",
                 Quantity = "4 pahare"
             };
 
-            IBaseIngredient ingredient3 = new BaseIngredient
+            BaseIngredient ingredient3 = new BaseIngredient
             {
                 Name = "Drojdie",
                 Quantity = "o bucata"
             };
 
-            List<IBaseIngredient> baseIngredients1 =
-                new List<IBaseIngredient>() { ingredient1, ingredient2, ingredient3 };
+            List<BaseIngredient> baseIngredients1 =
+                new List<BaseIngredient>() { ingredient1, ingredient2, ingredient3 };
 
             recipe1.AddMoreIngredients(baseIngredients1);
 
-            _baseRecipes.Add(recipe1);
-            _baseRecipes.Add(recipe1);
-            _baseRecipes.Add(recipe1);
+            return recipe1;
         }
     }
 }

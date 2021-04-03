@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "y//Lk2pLuGanx2s1d8liMyIOIF6Wucn+5AgEcd4ErEvbjcCtQRXtAQYb3haWy2SWCvJb6L0k7Rz1zeGqZsp9BQ==",
+  "dgSpecHash": "JtFYXGxhgV0EBcZnLbrXNSMlPaWyBBk8v7WuUDPBiKSOR7sdMumSFCd1k6ZTublRwe9+QJH0M11J4TfMNc18WA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Peanut\\source\\repos\\PDM\\Xamarin\\AppRetetePDM\\AppRetetePDM\\AppRetetePDM\\AppRetetePDM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peanut\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Peanut\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"

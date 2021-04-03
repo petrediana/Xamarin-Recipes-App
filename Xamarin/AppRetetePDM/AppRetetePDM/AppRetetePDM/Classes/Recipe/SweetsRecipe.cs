@@ -1,4 +1,5 @@
 ﻿using AppRetetePDM.Classes.Ingredient;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,21 +32,23 @@ namespace AppRetetePDM.Classes.Recipe
             }
         }
 
-        public string Ingredients { get => GetBaseIngredients(_baseIngredients); }
+        public List<IBaseIngredient> BaseIngredients { get => _baseIngredients; set => _baseIngredients = value;}
         public string RecipeName { get => _recipeName; set => _recipeName = value; }
         public string RecipeDescriptions { get => _recipeDescription; set => _recipeDescription = value; }
 
-        public string GetBaseIngredients(IEnumerable<IBaseIngredient> baseIngredients)
+        [JsonIgnore]
+        public string Ingredients { get => GetBaseIngredients(); }
+        public string GetBaseIngredients()
         {
             StringBuilder ingredientsBuilder = new StringBuilder();
 
-            foreach (var baseIngredient in baseIngredients)
+            foreach (var baseIngredient in _baseIngredients)
             {
                 ingredientsBuilder.Append(baseIngredient.ToString());
                 ingredientsBuilder.Append("\n");
             }
 
-            ingredientsBuilder.Remove(ingredientsBuilder.Length - 2, 1);
+            //ingredientsBuilder.Remove(ingredientsBuilder.Length - 2, 1);
             return ingredientsBuilder.ToString();
         }
     }
