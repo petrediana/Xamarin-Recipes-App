@@ -28,6 +28,7 @@ namespace AppRetetePDM
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+
             _mainPageViewModel.BaseRecipesCollection = await _mainPageViewModel.PrepareDataForList();
             _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
         }

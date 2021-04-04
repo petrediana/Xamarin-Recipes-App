@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-04T11:27:38.694</Modified>
+      <Modified>2021-04-04T18:28:49.002</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\AppRetetePDM.UWP.exe">
       <PackagePath>entrypoint\AppRetetePDM.UWP.exe</PackagePath>
-      <Modified>2021-04-04T11:27:38.039</Modified>
+      <Modified>2021-04-04T18:28:48.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -45,6 +45,30 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T17:16:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\sqlite-net-pcl\1.7.335\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2020-05-15T23:38:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\sqlitepclraw.bundle_green\2.0.3\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2020-05-01T11:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\sqlitepclraw.core\2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2020-05-01T11:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.3\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2020-04-07T16:14:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.3\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2020-05-01T11:35:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2018-09-18T16:38:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -72,7 +96,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\AppRetetePDM.dll">
       <PackagePath>AppRetetePDM.dll</PackagePath>
-      <Modified>2021-04-04T11:27:33.620</Modified>
+      <Modified>2021-04-04T18:36:59.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -231,11 +255,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-04-04T11:27:37.997</Modified>
+      <Modified>2021-04-04T18:28:48.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-04-04T11:27:37.997</Modified>
+      <Modified>2021-04-04T18:28:48.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -251,11 +275,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-04-03T19:52:43.955</Modified>
+      <Modified>2021-04-04T17:27:09.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\Core\AppRetetePDM.UWP.exe">
       <PackagePath>AppRetetePDM.UWP.exe</PackagePath>
-      <Modified>2021-04-04T11:27:38.692</Modified>
+      <Modified>2021-04-04T18:28:49.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

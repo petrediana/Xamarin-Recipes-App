@@ -10,14 +10,19 @@ namespace AppRetetePDM.ViewModels
 {
     public class DisplaySelectedRecipePageViewModel : BaseViewModel
     {
-        public DisplaySelectedRecipePageViewModel()
+        public DisplaySelectedRecipePageViewModel(SweetsRecipe selected)
         {
             ModifyRecipeCommand = new Command(UpdateCurrentRecipeProperties);
+            Selected = selected;
 
+            RecipeName = Selected.RecipeName;
+            RecipeDescriptions = Selected.RecipeDescriptions;
+            Ingredients = Selected.Ingredients;
         }
 
         private string _recipeDescriptions;
         private string _recipeName;
+        private string _ingredients;
         public string RecipeName
         {
             get => _recipeName;
@@ -42,16 +47,39 @@ namespace AppRetetePDM.ViewModels
                 }
             }
         }
-        public ICommand ModifyRecipeCommand { get; set; }
-
-        private void UpdateCurrentRecipeProperties()
+        public string Ingredients
         {
-            if (!string.IsNullOrEmpty(RecipeName))
+            get => _ingredients;
+            set
             {
-                RecipeName = "dsfijdasdfas";
+                if (_ingredients != value)
+                {
+                    _ingredients = value;
+                    OnPropertyChanged("Ingredients");
+                }
             }
         }
 
+        public ICommand ModifyRecipeCommand { get; set; }
+        public SweetsRecipe Selected { get; internal set; }
 
+        private void UpdateCurrentRecipeProperties()
+        {
+            if (CheckIfEntryFieldsAreValid())
+            {
+                Selected.RecipeName = RecipeName;
+                Selected.RecipeDescriptions = RecipeDescriptions;
+                Selected.Ingredients = Ingredients;
+
+                _daoInstance.UpdateRecipe(Selected);
+
+                Application.Current.MainPage.Navigation.PopAsync();
+            }
+        }
+
+        private bool CheckIfEntryFieldsAreValid()
+        {
+            return (!string.IsNullOrEmpty(RecipeName) && !string.IsNullOrEmpty(RecipeDescriptions) && !string.IsNullOrEmpty(Ingredients));
+        }
     }
 }

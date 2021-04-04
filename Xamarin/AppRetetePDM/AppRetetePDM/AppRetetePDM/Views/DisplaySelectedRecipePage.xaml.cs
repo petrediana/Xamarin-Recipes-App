@@ -15,14 +15,14 @@ namespace AppRetetePDM.Views
     public partial class DisplaySelectedRecipePage : ContentPage
     {
 
-        private DisplaySelectedRecipePageViewModel _model = new DisplaySelectedRecipePageViewModel();
+        private DisplaySelectedRecipePageViewModel _model;
 
         public DisplaySelectedRecipePage(SweetsRecipe selected)
         {
             InitializeComponent();
 
-            _model.RecipeName = selected.RecipeName;
-            _model.RecipeDescriptions = selected.RecipeDescriptions;
+            _model = new DisplaySelectedRecipePageViewModel(selected);
+
             BindingContext = _model;
         }
 

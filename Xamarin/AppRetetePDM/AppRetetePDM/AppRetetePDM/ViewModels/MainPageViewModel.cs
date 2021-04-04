@@ -5,6 +5,7 @@ using AppRetetePDM.ViewModels.BaseViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,16 +19,44 @@ namespace AppRetetePDM.ViewModels
 
         public async Task<ObservableCollection<IBaseRecipe>> PrepareDataForList()
         {
-            var getJsonData = await HttpService.AsyncGetRequest();
-            var parsedRecipeListFromJson = _jsonParserService.DeserializeBaseRecipesFromString(getJsonData);
-
-            ObservableCollection <IBaseRecipe> collection = new ObservableCollection<IBaseRecipe>();
-            foreach (var recipe in parsedRecipeListFromJson)
+            ObservableCollection<IBaseRecipe> collection = new ObservableCollection<IBaseRecipe>();
+            
+            var dataFromDb = _daoInstance.GetAllSweetRecipes();
+            if (dataFromDb.Count != 0)
             {
-                collection.Add(recipe);
+                foreach (var recipe in dataFromDb)
+                {
+                    collection.Add(recipe);
+                }
+            }
+            else
+            {
+                var getJsonData = await HttpService.AsyncGetRequest();
+                var parsedRecipeListFromJson = _jsonParserService.DeserializeBaseRecipesFromString(getJsonData);
+
+                var finalValues = parsedRecipeListFromJson.Select(recipe => (SweetsRecipe)recipe).ToList();
+                finalValues.ForEach(sweet => sweet.Ingredients = sweet.GetBaseIngredients());
+                _daoInstance.AddListOfRecipes(finalValues);
+
+                foreach (var recipe in finalValues)
+                {
+                    collection.Add(recipe);
+                }
             }
 
             return collection;
+        }
+
+        private List<SweetsRecipe> ParseToConcreteList(IEnumerable<IBaseRecipe> list)
+        {
+            List<SweetsRecipe> parsedList = new List<SweetsRecipe>();
+
+            foreach (var baseRecipe in list)
+            {
+                parsedList.Add((SweetsRecipe)baseRecipe);
+            }
+
+            return parsedList;
         }
 
         private IBaseRecipe _selectedBaseRecipe = null;
