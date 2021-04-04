@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Newtonsoft.Json;
 using AppRetetePDM.Services.Logger;
 using AppRetetePDM.Services.Http;
+using AppRetetePDM.Services.JsonHelper;
 
 namespace AppRetetePDM
 {
@@ -22,17 +23,16 @@ namespace AppRetetePDM
 
         private List<IBaseRecipe> _baseRecipes = new List<IBaseRecipe>();
         private ILoggerService _logger = new LoggerService();
+        private IJsonParserService _jsonParserService = new JsonParserService();
         protected async override void OnAppearing()
         {
             base.OnAppearing();
             //CreateSomeRecipes();
 
-            string rezultat = await HttpService.Ceva();
-            var deserialisedRecipe1 = JsonConvert
-               .DeserializeObject<List<SweetsRecipe>>(rezultat, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-
-
-            _baseRecipes.AddRange(deserialisedRecipe1);
+            string receivedJsonArray = await HttpService.AsyncGetRequest();
+            var recipes = _jsonParserService.DeserializeBaseRecipesFromString(receivedJsonArray);
+           
+            _baseRecipes.AddRange(recipes);
 
             listViewRecipesMainPage.ItemsSource = _baseRecipes;
             BindingContext = _baseRecipes[0];
@@ -47,7 +47,7 @@ namespace AppRetetePDM
             string serialisedList = JsonConvert
                 .SerializeObject(someList, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
 
-            string rezultat = await HttpService.Ceva();
+            string rezultat = await HttpService.AsyncGetRequest();
             var deserialisedRecipe1 = JsonConvert
                 .DeserializeObject<List<SweetsRecipe>>(rezultat, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
 

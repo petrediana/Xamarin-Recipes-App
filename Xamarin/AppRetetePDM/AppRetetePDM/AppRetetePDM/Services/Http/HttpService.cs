@@ -8,11 +8,11 @@ namespace AppRetetePDM.Services.Http
 {
     public class HttpService
     {
-        const string URL = @"https://raw.githubusercontent.com/petrediana/DAM/master/File.txt";
-        public static async Task<string> Ceva()
+        const string JSON_DATA_URI = @"https://raw.githubusercontent.com/petrediana/DAM/master/File.txt";
+        public static async Task<string> AsyncGetRequest()
         {
             HttpClient httpClient = new HttpClient();
-            string result = await httpClient.GetStringAsync(URL);
+            string result = await httpClient.GetStringAsync(JSON_DATA_URI);
 
             return result;
         }
