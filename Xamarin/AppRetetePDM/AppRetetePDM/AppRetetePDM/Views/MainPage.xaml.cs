@@ -11,32 +11,27 @@ using Newtonsoft.Json;
 using AppRetetePDM.Services.Logger;
 using AppRetetePDM.Services.Http;
 using AppRetetePDM.Services.JsonHelper;
+using AppRetetePDM.ViewModels;
 
 namespace AppRetetePDM
 {
     public partial class MainPage : ContentPage
     {
+        readonly MainPageViewModel _mainPageViewModel = new MainPageViewModel();
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = _mainPageViewModel;
         }
 
-        private List<IBaseRecipe> _baseRecipes = new List<IBaseRecipe>();
-        private ILoggerService _logger = new LoggerService();
-        private IJsonParserService _jsonParserService = new JsonParserService();
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            //CreateSomeRecipes();
-
-            string receivedJsonArray = await HttpService.AsyncGetRequest();
-            var recipes = _jsonParserService.DeserializeBaseRecipesFromString(receivedJsonArray);
-           
-            _baseRecipes.AddRange(recipes);
-
-            listViewRecipesMainPage.ItemsSource = _baseRecipes;
-            BindingContext = _baseRecipes[0];
+            _mainPageViewModel.BaseRecipesCollection = await _mainPageViewModel.PrepareDataForList();
+            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
         }
+
+        private List<IBaseRecipe> _baseRecipes = new List<IBaseRecipe>();
 
         private async void CreateSomeRecipes()
         {

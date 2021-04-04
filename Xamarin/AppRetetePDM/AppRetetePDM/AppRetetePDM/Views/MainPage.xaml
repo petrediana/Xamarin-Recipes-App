@@ -9,7 +9,7 @@
         </Frame>
 
         <StackLayout>
-            <ListView x:Name="listViewRecipesMainPage">
+            <ListView ItemsSource="{Binding BaseRecipesCollection}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
