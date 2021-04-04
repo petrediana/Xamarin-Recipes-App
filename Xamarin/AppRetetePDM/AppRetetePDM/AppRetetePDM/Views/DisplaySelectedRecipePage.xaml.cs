@@ -1,4 +1,5 @@
 ﻿using AppRetetePDM.Classes.Recipe;
+using AppRetetePDM.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,16 +14,17 @@ namespace AppRetetePDM.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DisplaySelectedRecipePage : ContentPage
     {
-        private SweetsRecipe _selected;
+
+        private DisplaySelectedRecipePageViewModel _model = new DisplaySelectedRecipePageViewModel();
 
         public DisplaySelectedRecipePage(SweetsRecipe selected)
         {
             InitializeComponent();
-            this._selected = selected;
 
-            BindingContext = Recipe;
+            _model.RecipeName = selected.RecipeName;
+            _model.RecipeDescriptions = selected.RecipeDescriptions;
+            BindingContext = _model;
         }
 
-        public SweetsRecipe Recipe { get => _selected; set => _selected = value; }
     }
 }

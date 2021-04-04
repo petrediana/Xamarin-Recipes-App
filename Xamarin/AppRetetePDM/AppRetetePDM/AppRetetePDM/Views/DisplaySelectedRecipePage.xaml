@@ -3,10 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppRetetePDM.Views.DisplaySelectedRecipePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding RecipeName}" />
-            <Label Text="{Binding RecipeDescriptions}" />
-            <Label Text="{Binding Ingredients}" />
-        </StackLayout>
+        <Grid Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Recipe Name:" FontSize="18"/>
+            <Entry Grid.Row="0" Grid.Column="1" Placeholder="Name..." x:Name="entryRecipeName" Text="{Binding RecipeName}"/>
+
+
+            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Recipe Description:" FontSize="18"/>
+            <Entry Grid.Row="1" Grid.Column="1" Placeholder="Description..." x:Name="entryRecipeDescriptions" Text="{Binding RecipeDescriptions}"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Ingredients:" FontSize="18"/>
+            <Editor Grid.Row="3" Grid.Column="0" Placeholder="Ingredients..." x:Name="entryIngredients" AutoSize="TextChanges" Text="{Binding Ingredients}"/>
+
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="Modify Recipe" Command="{Binding ModifyRecipeCommand}"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
