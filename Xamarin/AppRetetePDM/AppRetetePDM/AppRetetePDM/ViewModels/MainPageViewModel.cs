@@ -30,6 +30,8 @@ namespace AppRetetePDM.ViewModels
             return collection;
         }
 
+        private IBaseRecipe _selectedBaseRecipe = null;
+
         private ObservableCollection<IBaseRecipe> _baseRecipes = new ObservableCollection<IBaseRecipe>();
         public ObservableCollection<IBaseRecipe> BaseRecipesCollection
         {
@@ -38,6 +40,18 @@ namespace AppRetetePDM.ViewModels
             {
                 _baseRecipes = value;
                 OnPropertyChanged("BaseRecipesCollection");
+            }
+        }
+        public IBaseRecipe SelectedBaseRecipe
+        {
+            get => _selectedBaseRecipe;
+            set
+            {
+                if (_selectedBaseRecipe != value)
+                {
+                    _selectedBaseRecipe = value;
+                    OnPropertyChanged("SelectedBaseRecipe");
+                }
             }
         }
 

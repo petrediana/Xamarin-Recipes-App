@@ -4,16 +4,21 @@
              x:Class="AppRetetePDM.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to our recipe app! Below you can see your recipes." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="#2196F3" Padding="8" CornerRadius="0">
+            <Label Text="Your available recipes" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
         </Frame>
 
         <StackLayout>
-            <ListView ItemsSource="{Binding BaseRecipesCollection}">
+            <ListView ItemsSource="{Binding BaseRecipesCollection}"
+                      SelectedItem="{Binding SelectedBaseRecipe}"
+                      ItemTapped="ListView_ItemTapped"
+                      HasUnevenRows="True"
+                      SeparatorColor="Chocolate"
+                      SeparatorVisibility="Default">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
                                 <Label Text="{Binding RecipeName}" />
                                 <Label Text="{Binding RecipeDescriptions}" />
                                 <Label Text="{Binding Ingredients}" />

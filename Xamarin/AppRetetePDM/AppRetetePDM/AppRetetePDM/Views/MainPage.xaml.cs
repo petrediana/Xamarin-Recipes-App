@@ -12,6 +12,7 @@ using AppRetetePDM.Services.Logger;
 using AppRetetePDM.Services.Http;
 using AppRetetePDM.Services.JsonHelper;
 using AppRetetePDM.ViewModels;
+using AppRetetePDM.Views;
 
 namespace AppRetetePDM
 {
@@ -32,6 +33,14 @@ namespace AppRetetePDM
         }
 
         private List<IBaseRecipe> _baseRecipes = new List<IBaseRecipe>();
+        private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            SweetsRecipe selected = (SweetsRecipe)_mainPageViewModel.SelectedBaseRecipe;
+            if (selected != null)
+            {
+                await Navigation.PushAsync(new DisplaySelectedRecipePage(selected));
+            }            
+        }
 
         private async void CreateSomeRecipes()
         {
@@ -46,7 +55,7 @@ namespace AppRetetePDM
             var deserialisedRecipe1 = JsonConvert
                 .DeserializeObject<List<SweetsRecipe>>(rezultat, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
 
-            
+
             _baseRecipes.AddRange(deserialisedRecipe1);
 
         }
