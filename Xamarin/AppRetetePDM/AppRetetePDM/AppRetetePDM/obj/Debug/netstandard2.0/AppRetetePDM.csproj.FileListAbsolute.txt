@@ -12,3 +12,4 @@ C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.pdb
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\Views\DisplaySelectedRecipePage.xaml.g.cs
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.csprojAssemblyReference.cache
