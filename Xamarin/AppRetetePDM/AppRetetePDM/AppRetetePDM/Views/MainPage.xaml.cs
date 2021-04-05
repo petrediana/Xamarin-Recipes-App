@@ -30,7 +30,12 @@ namespace AppRetetePDM
             base.OnAppearing();
 
             _mainPageViewModel.BaseRecipesCollection = await _mainPageViewModel.PrepareDataForList();
+            /*_mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
             _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
+            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
+            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
+            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
+            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());*/
         }
 
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)

@@ -1,4 +1,3 @@
-C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.csprojAssemblyReference.cache
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.AssemblyInfoInputs.cache
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\obj\Debug\netstandard2.0\AppRetetePDM.AssemblyInfo.cs

@@ -24,6 +24,9 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="fjnsudfjnsad" />
+                            </ViewCell.ContextActions>
                             <Grid Padding="10">
                                 <Frame CornerRadius="20"
                                        HasShadow="True"

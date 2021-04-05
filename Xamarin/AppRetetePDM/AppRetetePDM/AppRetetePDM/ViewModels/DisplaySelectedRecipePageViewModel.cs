@@ -13,6 +13,7 @@ namespace AppRetetePDM.ViewModels
         public DisplaySelectedRecipePageViewModel(SweetsRecipe selected)
         {
             ModifyRecipeCommand = new Command(UpdateCurrentRecipeProperties);
+            DeleteRecipeCommand = new Command(DeleteCurrentRecipe);
             Selected = selected;
 
             RecipeName = Selected.RecipeName;
@@ -61,6 +62,7 @@ namespace AppRetetePDM.ViewModels
         }
 
         public ICommand ModifyRecipeCommand { get; set; }
+        public ICommand DeleteRecipeCommand { get; set; }
         public SweetsRecipe Selected { get; internal set; }
 
         private void UpdateCurrentRecipeProperties()
@@ -75,6 +77,12 @@ namespace AppRetetePDM.ViewModels
 
                 Application.Current.MainPage.Navigation.PopAsync();
             }
+        }
+
+        private void DeleteCurrentRecipe()
+        {
+            _daoInstance.DeleteRecipe(Selected);
+            Application.Current.MainPage.Navigation.PopAsync();
         }
 
         private bool CheckIfEntryFieldsAreValid()

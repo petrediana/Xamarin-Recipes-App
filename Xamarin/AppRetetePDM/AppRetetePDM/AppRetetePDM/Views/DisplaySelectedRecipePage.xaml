@@ -24,7 +24,8 @@
             <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Ingredients:" FontSize="18"/>
             <Editor Grid.Row="3" Grid.Column="0" Placeholder="Ingredients..." x:Name="entryIngredients" AutoSize="TextChanges" Text="{Binding Ingredients}"/>
 
-            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="Modify Recipe" Command="{Binding ModifyRecipeCommand}"/>
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="Modify Recipe" TextColor="White" BackgroundColor="#006DFF" BorderColor="Black" Command="{Binding ModifyRecipeCommand}"/>
+            <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="DELETE Recipe" TextColor="White" BackgroundColor="#ed7270" BorderColor="Black" Command="{Binding DeleteRecipeCommand}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
