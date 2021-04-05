@@ -33,7 +33,6 @@ namespace AppRetetePDM
             _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
         }
 
-        private List<IBaseRecipe> _baseRecipes = new List<IBaseRecipe>();
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             SweetsRecipe selected = (SweetsRecipe)_mainPageViewModel.SelectedBaseRecipe;
@@ -43,23 +42,6 @@ namespace AppRetetePDM
             }            
         }
 
-        private async void CreateSomeRecipes()
-        {
-            List<IBaseRecipe> someList = new List<IBaseRecipe>();
-            someList.Add(Recipe1());
-            someList.Add(Recipe2());
-
-            string serialisedList = JsonConvert
-                .SerializeObject(someList, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-
-            string rezultat = await HttpService.AsyncGetRequest();
-            var deserialisedRecipe1 = JsonConvert
-                .DeserializeObject<List<SweetsRecipe>>(rezultat, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-
-
-            _baseRecipes.AddRange(deserialisedRecipe1);
-
-        }
 
         private IBaseRecipe Recipe2()
         {

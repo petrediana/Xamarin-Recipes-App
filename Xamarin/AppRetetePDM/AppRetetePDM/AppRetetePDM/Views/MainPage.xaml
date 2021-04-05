@@ -27,10 +27,11 @@
                             <Grid Padding="10">
                                 <Frame CornerRadius="20"
                                        HasShadow="True"
-                                       HorizontalOptions="FillAndExpand">
+                                       HorizontalOptions="FillAndExpand"
+                                       OutlineColor="Gray">
                                     <StackLayout>
                                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                            <Label Text="{Binding RecipeName}" FontSize="20"/>
+                                            <Label Text="{Binding RecipeName}" FontSize="20" TextColor="#69add1"/>
                                         </StackLayout>
 
                                         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
