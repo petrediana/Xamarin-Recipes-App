@@ -4,7 +4,7 @@
              x:Class="AppRetetePDM.Views.DisplaySelectedRecipePage">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="LightGray">
+            <StackLayout BackgroundColor="#ECECEC">
                 <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
                     <Label Text="Here you can modify or delete a recipe!" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
                 </Frame>

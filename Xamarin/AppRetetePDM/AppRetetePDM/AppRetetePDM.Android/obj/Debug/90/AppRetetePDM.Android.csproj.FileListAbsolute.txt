@@ -490,7 +490,6 @@ C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\lp\27\jl\files.cache
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\lp\31\jl\files.cache
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\lp\35\jl\files.cache
-C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\lp\40\jl\files.cache
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\SQLite-net.dll
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\SQLitePCLRaw.core.dll
@@ -499,3 +498,8 @@ C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\System.Buffers.dll
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\System.Memory.dll
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\lp\41\jl\files.cache
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\assets\Xamarin.Forms.PancakeView.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\PancakeDrawable.java
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\PancakeViewRenderer.java
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.Android\obj\Debug\90\android\src\crc64f8908e42fa42e603\RoundedCornerOutlineProvider.java

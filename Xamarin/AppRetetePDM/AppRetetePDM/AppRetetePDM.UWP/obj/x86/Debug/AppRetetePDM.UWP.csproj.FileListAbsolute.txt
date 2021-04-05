@@ -68,3 +68,4 @@ C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\e_sqlite3.dll
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\Xamarin.Forms.PancakeView.dll

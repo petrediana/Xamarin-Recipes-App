@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.8.0.1451\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\xamarin.forms.pancakeview\2.3.0.759\lib\netstandard2.0\Xamarin.Forms.PancakeView.dll">
+      <PackagePath>Xamarin.Forms.PancakeView.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\AppRetetePDM.dll">
       <PackagePath>AppRetetePDM.dll</PackagePath>
     </AppxPackagedFile>

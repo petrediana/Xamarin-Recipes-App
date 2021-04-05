@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8s2GDtRXUJn6zl2L9jDd/LXp7JyA8m+sggALUN3SAWnKjuYhEefheqO0QX645j/cAlrkTearnZ5N9/En6mHOqQ==",
+  "dgSpecHash": "k7VdL/yyPHqGHvCw/WC7fvEOzjVofT7GvnY46+6oEblkOMvKE9KzifAQb82DiXFe5/iF9xUshJhLHjxjOtAqzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Peanut\\source\\repos\\PDM\\Xamarin\\AppRetetePDM\\AppRetetePDM\\AppRetetePDM.Android\\AppRetetePDM.Android.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Peanut\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.3\\sqlitepclraw.lib.e_sqlite3.android.2.0.3.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Peanut\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
@@ -51,7 +52,8 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\Peanut\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }
