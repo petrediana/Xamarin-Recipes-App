@@ -4,8 +4,8 @@
              x:Class="AppRetetePDM.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="8" CornerRadius="0">
-            <Label Text="Your available recipes" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+            <Label Text="Your available recipes" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
         </Frame>
 
         <StackLayout>
@@ -13,16 +13,39 @@
                       SelectedItem="{Binding SelectedBaseRecipe}"
                       ItemTapped="ListView_ItemTapped"
                       HasUnevenRows="True"
-                      SeparatorColor="Chocolate"
-                      SeparatorVisibility="Default">
+                      SeparatorVisibility="None">
+
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="Here is a list of sweet recipes that you can make!" Padding="10"/>
+                    </StackLayout>
+                </ListView.Header>
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text="{Binding RecipeName}" />
-                                <Label Text="{Binding RecipeDescriptions}" />
-                                <Label Text="{Binding Ingredients}" />
-                            </StackLayout>
+                            <Grid Padding="10">
+                                <Frame CornerRadius="20"
+                                       HasShadow="True"
+                                       HorizontalOptions="FillAndExpand">
+                                    <StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                            <Label Text="{Binding RecipeName}" FontSize="20"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                            <Label Text="Description:" TextColor="Black" />
+                                            <Label Text="{Binding RecipeDescriptions}" />
+                                        </StackLayout>
+                                        
+                                        <StackLayout HorizontalOptions="FillAndExpand">
+                                            <Label Text="Ingredients:" TextColor="Black" />
+                                            <Label Text="{Binding Ingredients}" />
+                                        </StackLayout>
+                                        
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
