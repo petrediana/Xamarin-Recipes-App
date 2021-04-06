@@ -52,6 +52,10 @@ namespace AppRetetePDM
             await Navigation.PushAsync(new AddRecipePage());
         }
 
+        private async void AboutToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutAppPage());
+        }
 
         private IBaseRecipe Recipe2()
         {

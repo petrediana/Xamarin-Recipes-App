@@ -85,6 +85,9 @@
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.8.0.1451\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\Assets\Cake.jpg">
+      <PackagePath>Assets\Cake.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

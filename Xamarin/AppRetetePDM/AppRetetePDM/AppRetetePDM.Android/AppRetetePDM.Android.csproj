@@ -94,14 +94,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AppRetetePDM\AppRetetePDM.csproj">
       <Project>{15146BA0-5D33-47A0-B34E-C8EDD15977AA}</Project>
       <Name>AppRetetePDM</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Cake.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

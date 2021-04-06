@@ -5,7 +5,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Random Recommendation" Order="Secondary"  />
-        <ToolbarItem Text="About" Order="Secondary"  />
+        <ToolbarItem Text="About" Order="Secondary" Clicked="AboutToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <StackLayout>
