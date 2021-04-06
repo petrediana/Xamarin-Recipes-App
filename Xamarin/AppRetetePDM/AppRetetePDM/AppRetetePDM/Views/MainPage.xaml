@@ -27,7 +27,9 @@
                                     BorderWidth="2"
                                     CornerRadius="20"
                                     HeightRequest="35"
-                                    BorderColor="Black"/>
+                                    BorderColor="Black"
+                                    BackgroundColor="LightGray"
+                                    Clicked="AddRecipeBtn_Clicked"/>
                         </StackLayout>
                     </StackLayout>
                 </ListView.Header>

@@ -47,6 +47,11 @@ namespace AppRetetePDM
             }            
         }
 
+        private async void AddRecipeBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddRecipePage());
+        }
+
 
         private IBaseRecipe Recipe2()
         {
@@ -115,5 +120,7 @@ namespace AppRetetePDM
 
             return recipe1;
         }
+
+        
     }
 }
