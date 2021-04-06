@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppRetetePDM.MainPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Random Recommendation" Order="Secondary"  />
+        <ToolbarItem Text="About" Order="Secondary"  />
+    </ContentPage.ToolbarItems>
+
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
             <Label Text="Your available recipes" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
