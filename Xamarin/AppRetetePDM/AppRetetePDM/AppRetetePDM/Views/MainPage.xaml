@@ -16,17 +16,25 @@
                       SeparatorVisibility="None">
 
                 <ListView.Header>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                        <Label Text="Here is a list of sweet recipes that you can make!" TextColor="Black" Padding="10"/>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="Here is a list of sweet recipes that you can make! Or just add your own!"
+                                   TextColor="Black"
+                                   Padding="10"/>
+                        </StackLayout>
+                        <StackLayout Margin="10">
+                            <Button Text="Add recipe"
+                                    BorderWidth="2"
+                                    CornerRadius="20"
+                                    HeightRequest="35"
+                                    BorderColor="Black"/>
+                        </StackLayout>
                     </StackLayout>
                 </ListView.Header>
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <ViewCell.ContextActions>
-                                <MenuItem Text="fjnsudfjnsad" />
-                            </ViewCell.ContextActions>
                             <Grid Padding="10">
                                 <Frame CornerRadius="20"
                                        HasShadow="True"
