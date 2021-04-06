@@ -34,7 +34,8 @@
                             CornerRadius="20"
                             HeightRequest="50"
                             BorderColor="Black" 
-                            Command="{Binding ModifyRecipeCommand}"/>
+                            Command="{Binding ModifyRecipeCommand}"
+                            Clicked="ModifyRecipeBtn_Clicked"/>
                         <Button 
                             Text="DELETE Recipe" 
                             TextColor="White" 
@@ -43,7 +44,8 @@
                             CornerRadius="20"
                             HeightRequest="50"
                             BorderColor="Black" 
-                            Command="{Binding DeleteRecipeCommand}"/>
+                            Command="{Binding DeleteRecipeCommand}"
+                            Clicked="DeleteRecipeBtn_Clicked"/>
                     </StackLayout>
 
                 </StackLayout>

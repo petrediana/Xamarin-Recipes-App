@@ -26,5 +26,20 @@ namespace AppRetetePDM.Views
             BindingContext = _model;
         }
 
+        private void ModifyRecipeBtn_Clicked(object sender, EventArgs e)
+        {
+            _model.UpdateCurrentRecipeProperties();
+        }
+
+        private async void DeleteRecipeBtn_Clicked(object sender, EventArgs e)
+        {
+            bool answer = await DisplayAlert("Warning!",
+                "You are about to delete this recipe!!\nAre you really sure?",
+                "Yes", "No");
+            if (answer)
+            {
+                _model.DeleteCurrentRecipe();
+            }
+        }
     }
 }
