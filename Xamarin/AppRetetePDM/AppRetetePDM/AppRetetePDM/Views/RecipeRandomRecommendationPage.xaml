@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRetetePDM.Views.RecipeRandomRecommendationPage"
+             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core">
+    <ContentPage.Content>
+        <RefreshView IsRefreshing="{Binding IsRefreshing}"
+                     Command="{Binding RefreshCommand}"
+                     RefreshColor="Red"
+                     windows:RefreshView.RefreshPullDirection="TopToBottom">
+            <ListView 
+                HasUnevenRows="True"
+                ItemsSource="{Binding Recipe}">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="ASDHSDIUFSAH" FontSize="20" TextColor="#69add1"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="{Binding RecipeName}" FontSize="20" TextColor="#69add1"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <Label Text="Description:" TextColor="Black" />
+                                    <Label Text="{Binding RecipeDescriptions}" />
+                                </StackLayout>
+
+                                <StackLayout HorizontalOptions="FillAndExpand">
+                                    <Label Text="Ingredients:" TextColor="Black" />
+                                    <Label Text="{Binding Ingredients}" />
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

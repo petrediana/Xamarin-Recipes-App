@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VW0sWL6e0Q4ptzwt3qNpwwTEeDNNkzUiGUZ5PpU9+xxXsiypPtakQDyXLf8lpcR4pBewXIHlEvudgMqKDRS/Fg==",
+  "dgSpecHash": "rvJqy3n7TIjQ1Rg3iDMH69YSW18sMjq2tuj6Z8gnv8dpZyS0D0XnroOByChdBaCy9xHG+UIwytBTIZ3K9e+LTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Peanut\\source\\repos\\PDM\\Xamarin\\AppRetetePDM\\AppRetetePDM\\AppRetetePDM.UWP\\AppRetetePDM.UWP.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Peanut\\.nuget\\packages\\microsoft.ui.xaml\\2.4.2\\microsoft.ui.xaml.2.4.2.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Peanut\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\runtime.aot.system.runtime\\4.3.0\\runtime.aot.system.runtime.4.3.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
@@ -43,6 +44,7 @@
     "C:\\Users\\Peanut\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Peanut\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",

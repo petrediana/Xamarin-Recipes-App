@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"AppRetetePDM.Android.dll",
 		"AppRetetePDM.dll",
 		"FormsViewGroup.dll",
+		"MvvmHelpers.dll",
 		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

@@ -57,6 +57,11 @@ namespace AppRetetePDM
             await Navigation.PushAsync(new AboutAppPage());
         }
 
+        private async void RandomRecommendation_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RecipeRandomRecommendationPage());
+        }
+
         private IBaseRecipe Recipe2()
         {
             IBaseRecipe recipe1 = new SweetsRecipe
@@ -124,7 +129,5 @@ namespace AppRetetePDM
 
             return recipe1;
         }
-
-        
     }
 }
