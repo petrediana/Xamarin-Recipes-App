@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using AppRetetePDM.Classes.Recipe;
 using AppRetetePDM.Classes.Ingredient;
+using System.Linq;
 
 namespace AppRetetePDM.ViewModels
 {
@@ -21,11 +22,20 @@ namespace AppRetetePDM.ViewModels
 
             RefreshCommand = new AsyncCommand(Refresh);
             IsRefreshing = false;
+
+            _recipesForRandom = new List<IBaseRecipe>
+            {
+                Recipe1(),
+                Recipe2(),
+                Recipe3()
+            };
         }
 
 
         public ObservableCollection<IBaseRecipe> Recipe { get; set; }
         public AsyncCommand RefreshCommand { get; }
+
+        private List<IBaseRecipe> _recipesForRandom;
 
         private bool _isRefreshing;
         public bool IsRefreshing
@@ -41,14 +51,72 @@ namespace AppRetetePDM.ViewModels
         private async Task Refresh()
         {
             IsRefreshing = true;
-            await Task.Delay(1500);
+            await Task.Delay(1000);
 
             Recipe.Clear();
-            Recipe.Add(Recipe2());
+            Recipe.Add(GetRandomRecipe());
 
             IsRefreshing = false;
         }
 
+        private IBaseRecipe GetRandomRecipe()
+        {
+            Random random = new Random();
+            var randomResult = random.Next(_recipesForRandom.Count);
+
+            return _recipesForRandom[randomResult];
+        }
+
+        private IBaseRecipe Recipe3()
+        {
+            IBaseRecipe recipe1 = new SweetsRecipe
+            {
+                RecipeName = "Tort de ciocolata",
+                RecipeDescriptions = "Un tortulet simplu"
+            };
+
+            BaseIngredient ingredient1 = new BaseIngredient
+            {
+                Name = "Pudra de cacao",
+                Quantity = "3 linguri"
+            };
+
+            BaseIngredient ingredient2 = new BaseIngredient
+            {
+                Name = "Faina",
+                Quantity = "3 pahare"
+            };
+
+            BaseIngredient ingredient3 = new BaseIngredient
+            {
+                Name = "Lapte",
+                Quantity = "un sfert de pahar"
+            };
+
+            BaseIngredient ingredient4 = new BaseIngredient
+            {
+                Name = "Esenta de vanilie",
+                Quantity = "o lingurita"
+            };
+
+            BaseIngredient ingredient5 = new BaseIngredient
+            {
+                Name = "Apa minerala",
+                Quantity = "jumatate de pahar"
+            };
+
+
+            List<BaseIngredient> baseIngredients1 =
+                new List<BaseIngredient>() { ingredient1, ingredient2, ingredient3, ingredient4, ingredient5 };
+
+            recipe1.AddMoreIngredients(baseIngredients1);
+
+            SweetsRecipe theRecipe = (SweetsRecipe)recipe1;
+            theRecipe.ID = 3;
+            theRecipe.Ingredients = theRecipe.GetBaseIngredients();
+
+            return theRecipe;
+        }
         private IBaseRecipe Recipe2()
         {
             IBaseRecipe recipe1 = new SweetsRecipe
@@ -80,7 +148,11 @@ namespace AppRetetePDM.ViewModels
 
             recipe1.AddMoreIngredients(baseIngredients1);
 
-            return recipe1;
+            SweetsRecipe theRecipe = (SweetsRecipe)recipe1;
+            theRecipe.ID = 2;
+            theRecipe.Ingredients = theRecipe.GetBaseIngredients();
+
+            return theRecipe;
         }
         private IBaseRecipe Recipe1()
         {
@@ -112,6 +184,10 @@ namespace AppRetetePDM.ViewModels
                 new List<BaseIngredient>() { ingredient1, ingredient2, ingredient3 };
 
             recipe1.AddMoreIngredients(baseIngredients1);
+
+            SweetsRecipe theRecipe = (SweetsRecipe)recipe1;
+            theRecipe.ID = 1;
+            theRecipe.Ingredients = theRecipe.GetBaseIngredients();
 
             return recipe1;
         }

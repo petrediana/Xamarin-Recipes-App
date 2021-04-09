@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rvJqy3n7TIjQ1Rg3iDMH69YSW18sMjq2tuj6Z8gnv8dpZyS0D0XnroOByChdBaCy9xHG+UIwytBTIZ3K9e+LTg==",
+  "dgSpecHash": "wVbm/6UMavjHSJ5zcfq5F212aieRysJKEEOvBwpNK0HFp7rJBlEAbyeVRFD1FQ/nMYiRO8YVlHUcs0tbnOndNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Peanut\\source\\repos\\PDM\\Xamarin\\AppRetetePDM\\AppRetetePDM\\AppRetetePDM.UWP\\AppRetetePDM.UWP.csproj",
   "expectedPackageFiles": [
@@ -46,7 +46,7 @@
     "C:\\Users\\Peanut\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Peanut\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
     "C:\\Users\\Peanut\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
