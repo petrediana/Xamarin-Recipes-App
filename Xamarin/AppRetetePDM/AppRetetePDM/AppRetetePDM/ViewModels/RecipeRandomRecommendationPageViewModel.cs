@@ -27,7 +27,9 @@ namespace AppRetetePDM.ViewModels
             {
                 Recipe1(),
                 Recipe2(),
-                Recipe3()
+                Recipe3(),
+                Recipe4(),
+                Recipe5()
             };
         }
 
@@ -67,6 +69,100 @@ namespace AppRetetePDM.ViewModels
             return _recipesForRandom[randomResult];
         }
 
+        private IBaseRecipe Recipe5()
+        {
+            IBaseRecipe recipe1 = new SweetsRecipe
+            {
+                RecipeName = "Salata de fructe",
+                RecipeDescriptions = "whatever..."
+            };
+
+            BaseIngredient ingredient1 = new BaseIngredient
+            {
+                Name = "Mere",
+                Quantity = "10 felii"
+            };
+
+            BaseIngredient ingredient2 = new BaseIngredient
+            {
+                Name = "Banana",
+                Quantity = "5 felii"
+            };
+
+            BaseIngredient ingredient3 = new BaseIngredient
+            {
+                Name = "Cirese",
+                Quantity = "20 de jumatati"
+            };
+
+            BaseIngredient ingredient4 = new BaseIngredient
+            {
+                Name = "Piersica",
+                Quantity = "5 felii"
+            };
+
+            BaseIngredient ingredient5 = new BaseIngredient
+            {
+                Name = "Prune",
+                Quantity = "4 jumatati"
+            };
+
+
+            List<BaseIngredient> baseIngredients1 =
+                new List<BaseIngredient>() { ingredient1, ingredient2, ingredient3, ingredient4, ingredient5 };
+
+            recipe1.AddMoreIngredients(baseIngredients1);
+
+            SweetsRecipe theRecipe = (SweetsRecipe)recipe1;
+            theRecipe.ID = 5;
+            theRecipe.Ingredients = theRecipe.GetBaseIngredients();
+
+            return theRecipe;
+        }
+        private IBaseRecipe Recipe4()
+        {
+            IBaseRecipe recipe1 = new SweetsRecipe
+            {
+                RecipeName = "Paine cu ou si zahar",
+                RecipeDescriptions = "Un tortulet simplu"
+            };
+
+            BaseIngredient ingredient1 = new BaseIngredient
+            {
+                Name = "Paine neagra",
+                Quantity = "2 felii"
+            };
+
+            BaseIngredient ingredient2 = new BaseIngredient
+            {
+                Name = "Oua",
+                Quantity = "2 batute"
+            };
+
+            BaseIngredient ingredient3 = new BaseIngredient
+            {
+                Name = "Lapte",
+                Quantity = "o lingurita"
+            };
+
+            BaseIngredient ingredient4 = new BaseIngredient
+            {
+                Name = "Zahar pudra",
+                Quantity = "dupa preferinta"
+            };
+
+
+            List<BaseIngredient> baseIngredients1 =
+                new List<BaseIngredient>() { ingredient1, ingredient2, ingredient3, ingredient4 };
+
+            recipe1.AddMoreIngredients(baseIngredients1);
+
+            SweetsRecipe theRecipe = (SweetsRecipe)recipe1;
+            theRecipe.ID = 4;
+            theRecipe.Ingredients = theRecipe.GetBaseIngredients();
+
+            return theRecipe;
+        }
         private IBaseRecipe Recipe3()
         {
             IBaseRecipe recipe1 = new SweetsRecipe
