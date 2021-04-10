@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRetetePDM.Views.ScheduledRecipePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ECECEC">
+            <Grid Padding="10">
+                <Frame>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Your next recipe is..." TextColor="Red" FontSize="20"/>
+                        </StackLayout>
+                        
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Recipe Name: " FontSize="16"/>
+                            <Label Text="{Binding RecipeName}" FontSize="16"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Planned to cook on: " FontSize="16"/>
+                            <Label Text="{Binding Date}" FontSize="16"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            <StackLayout Margin="50">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <Label Text="Pick a date:" FontSize="18"/>
+                    <DatePicker Date="{Binding SelectedDate}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0,25,0,0">
+                    <Label Text="Pick recipe" FontSize="18" />
+                    <Picker ItemsSource="{Binding RecipeNames}" SelectedItem="{Binding SelectedRecipeName}"/>
+                    <Button Text="Schedule next" Command="{Binding ScheduleRecipeCommand}"/>
+                </StackLayout>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

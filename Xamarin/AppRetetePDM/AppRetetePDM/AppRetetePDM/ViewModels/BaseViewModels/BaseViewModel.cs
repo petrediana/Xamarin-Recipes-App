@@ -14,12 +14,14 @@ namespace AppRetetePDM.ViewModels.BaseViewModels
         {
             _jsonParserService = new JsonParserService();
             _daoInstance = DaoSweetRecipes.Instance;
+            _daoscheduledRecipe = DaoScheduledRecipe.Instance;
             _recommandationService = new RecommandationService();
 
         }
 
         protected readonly IJsonParserService _jsonParserService;
         protected readonly DaoSweetRecipes _daoInstance;
+        protected readonly DaoScheduledRecipe _daoscheduledRecipe;
         protected readonly IRecommandationService _recommandationService;
 
         public event PropertyChangedEventHandler PropertyChanged;

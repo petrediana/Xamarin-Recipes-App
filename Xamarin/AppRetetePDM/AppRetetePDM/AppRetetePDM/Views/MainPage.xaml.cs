@@ -30,12 +30,6 @@ namespace AppRetetePDM
             base.OnAppearing();
 
             _mainPageViewModel.BaseRecipesCollection = await _mainPageViewModel.PrepareDataForList();
-            /*_mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
-            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
-            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
-            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
-            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());
-            _mainPageViewModel.BaseRecipesCollection.Add(Recipe2());*/
         }
 
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -60,6 +54,11 @@ namespace AppRetetePDM
         private async void RandomRecommendation_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RecipeRandomRecommendationPage());
+        }
+
+        private async void ScheduleRecipe_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ScheduledRecipePage());
         }
 
         private IBaseRecipe Recipe2()

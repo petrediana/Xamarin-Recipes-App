@@ -4,6 +4,7 @@
              x:Class="AppRetetePDM.MainPage">
 
     <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Schedule Recipe" Order="Secondary" Clicked="ScheduleRecipe_Clicked" />
         <ToolbarItem Text="Random Recommendation" Order="Secondary" Clicked="RandomRecommendation_Clicked"/>
         <ToolbarItem Text="About" Order="Secondary" Clicked="AboutToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>

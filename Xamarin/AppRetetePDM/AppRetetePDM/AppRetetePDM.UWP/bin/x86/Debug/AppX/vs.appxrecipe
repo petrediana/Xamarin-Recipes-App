@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-09T18:48:32.868</Modified>
+      <Modified>2021-04-10T12:42:22.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\AppRetetePDM.UWP.exe">
       <PackagePath>entrypoint\AppRetetePDM.UWP.exe</PackagePath>
-      <Modified>2021-04-09T18:48:32.209</Modified>
+      <Modified>2021-04-10T12:42:22.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -104,7 +104,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM\bin\Debug\netstandard2.0\AppRetetePDM.dll">
       <PackagePath>AppRetetePDM.dll</PackagePath>
-      <Modified>2021-04-09T19:03:28.477</Modified>
+      <Modified>2021-04-10T12:42:17.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -267,11 +267,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-04-09T18:48:32.159</Modified>
+      <Modified>2021-04-10T12:42:22.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-04-09T18:48:32.159</Modified>
+      <Modified>2021-04-10T12:42:22.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -291,7 +291,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peanut\source\repos\PDM\Xamarin\AppRetetePDM\AppRetetePDM\AppRetetePDM.UWP\bin\x86\Debug\Core\AppRetetePDM.UWP.exe">
       <PackagePath>AppRetetePDM.UWP.exe</PackagePath>
-      <Modified>2021-04-09T18:48:32.865</Modified>
+      <Modified>2021-04-10T12:42:22.894</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
