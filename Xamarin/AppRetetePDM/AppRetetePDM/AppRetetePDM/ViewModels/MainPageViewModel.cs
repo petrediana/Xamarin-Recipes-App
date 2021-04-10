@@ -47,18 +47,6 @@ namespace AppRetetePDM.ViewModels
             return collection;
         }
 
-        private List<SweetsRecipe> ParseToConcreteList(IEnumerable<IBaseRecipe> list)
-        {
-            List<SweetsRecipe> parsedList = new List<SweetsRecipe>();
-
-            foreach (var baseRecipe in list)
-            {
-                parsedList.Add((SweetsRecipe)baseRecipe);
-            }
-
-            return parsedList;
-        }
-
         private IBaseRecipe _selectedBaseRecipe = null;
 
         private ObservableCollection<IBaseRecipe> _baseRecipes = new ObservableCollection<IBaseRecipe>();
