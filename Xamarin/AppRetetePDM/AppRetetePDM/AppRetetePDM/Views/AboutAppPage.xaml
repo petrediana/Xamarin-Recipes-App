@@ -4,11 +4,23 @@
              x:Class="AppRetetePDM.Views.AboutAppPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Recipes View 1.0.0.0"
-                   FontSize="Large"
-                   TextColor="DarkCyan"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <Label Text="Simple Recipes View Xamarin"
+                       FontSize="Large"
+                       TextColor="DarkCyan"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="10">
+                <Label Text="Coordinator teacher: Paul Pocatilu" />
+                <Label Text="Created by: Diana, Mihai, Victor" />
+                
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                    <Label Text="Faculty of Cybernetics, Statistics and Informatics. Master degree" />
+                    <Label Text="ASE. 2021." />
+                </StackLayout>
+            </StackLayout>
 
             <Image>
                 <Image.Source>
